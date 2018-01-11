@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/custom.css" rel="stylesheet" />
+		<title>demo01</title>
+
+		
+		<script type="application/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="application/javascript" src="js/bootstrap.min.js"></script>
+
+		<script language="JavaScript">
+			$(function() {
+				
+			});
+		</script>
+		
+		
+	</head>
+
+	<body>
+		<div class="navbar navbar-inverse">
+	        <div class="navbar-header">
+	        	<a class="navbar-brand" href="demo.html">后台管理模版</a>
+	        </div>
+	        <div class="nav navbar-nav navbar-right">
+                <li id="fat-menu" class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-user"></i> Jack Smith
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li class="divider visible-xs"></li>
+                        <li><a tabindex="-1" href="sign-in.html">Logout</a></li>
+                    </ul>
+                </li>                
+           	</div>
+       	</div>
+		<div class="sidebar-nav">
+			<a href="#msg-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom pull-right"></span>
+				消息管理
+			</a>
+			<ul id="msg-menu" class="nav nav-list collapse in">
+				<li><a href="demo.html">消息列表</a></li>
+				<li class="active"><a href="spotTraffic.html">景区交通</a></li>
+				<li><a href="#">景区气象</a></li>
+			</ul>
+			
+			<a href="#strategy-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				图表管理
+			</a>
+			<ul id="strategy-menu" class="nav nav-list collapse">
+				<li><a href="#">图表列表</a></li>
+				<li><a href="#">整件列表</a></li>
+				<li><a href="#">部件列表</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="header">
+				<h1 class="page-title">景区交通列表</h1>
+			</div>
+			<div class="container-fluid">
+				<div class="spot-title">					
+					<h2>明珠路交通状况</h2>
+					<hr/>
+					
+					<div class="row">
+						<div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-1">
+							<h5>发布日期：2018-1-11</h5>
+						</div>
+						<div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-6">
+							<h5>来源：上海市交通局</h5>
+						</div>
+					</div>
+					<h4>
+						明珠路交通非常拥堵，建议绕行。明珠路交通非常拥堵，建议绕行明珠路交通非常拥堵，建议绕行
+						明珠路交通非常拥堵，建议绕行明珠路交通非常拥堵，建议绕行明珠路交通非常拥堵，建议绕行明珠路交通非常拥堵，建议绕行
+						明珠路交通非常拥堵，建议绕行明珠路交通非常拥堵，建议绕行明珠路交通非常拥堵，建议绕行明珠路交通非常拥堵，建议绕行
+					</h4>
+				</div>
+			</div><!--end container -->
+			
+		</div>
+	</body>
+
+</html>
