@@ -275,3 +275,16 @@ hr {
 .form-horizontal.msg-btn{
 	margin-left: 5px;
 }
+
+.spot-title h2{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #2b2b2b;
+}
+
+.spot-title h4{
+	text-indent: 2em;
+	letter-spacing: 0.05em;
+	margin-top: 20px;
+}

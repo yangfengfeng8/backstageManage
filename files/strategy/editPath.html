@@ -1,0 +1,119 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../../css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../../css/custom.css" rel="stylesheet" />
+		<title>demo01</title>
+
+		
+		<script type="application/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+		<script type="application/javascript" src="../../js/bootstrap.min.js"></script>
+		
+		<link href="../../utf8-jsp/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+	    <script type="text/javascript" src="../../utf8-jsp/third-party/jquery.min.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="../../utf8-jsp/umeditor.config.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="../../utf8-jsp/umeditor.min.js"></script>
+	    <script type="text/javascript" src="../../utf8-jsp/lang/zh-cn/zh-cn.js"></script>
+		
+
+		<script language="JavaScript">
+			$(function() {
+				
+			});
+		</script>
+		
+		
+	</head>
+
+	<body>
+		<div class="navbar navbar-inverse">
+	        <div class="navbar-header">
+	        	<a class="navbar-brand" href="demo.html">后台管理模版</a>
+	        </div>
+	        <div class="nav navbar-nav navbar-right">
+                <li id="fat-menu" class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-user"></i> Jack Smith
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li class="divider visible-xs"></li>
+                        <li><a tabindex="-1" href="sign-in.html">Logout</a></li>
+                    </ul>
+                </li>                
+           	</div>
+       	</div>
+		<div class="sidebar-nav">
+			<a href="#msg-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom pull-right"></span>
+				消息管理
+			</a>
+			<ul id="msg-menu" class="nav nav-list collapse">
+				<li><a href="../../demo.html">消息列表</a></li>
+				<li><a href="../msg/spotTraffic.html">景区交通</a></li>
+				<li><a href="#">景区气象</a></li>
+			</ul>
+			
+			<a href="#strategy-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				攻略管理
+			</a>
+			<ul id="strategy-menu" class="nav nav-list collapse in">
+				<li><a href="worshipBudda.html">礼佛列表</a></li>
+				<li class="active"><a href="path.html">线路列表</a></li>
+				<li><a href="share.html">分享列表</a></li>
+			</ul>
+			<a href="#live-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				直播管理
+			</a>
+			<ul id="live-menu" class="nav nav-list collapse">
+				<li><a href="../live/liveComponent.html">直播列表</a></li>
+			</ul>
+			
+			<a href="#user-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				用户管理
+			</a>
+			<ul id="user-menu" class="nav nav-list collapse">
+				<li><a href="../user/user.html">用户列表</a></li>
+				<li><a href="../user/about.html">关于我们</a></li>
+				<li><a href="#">部件列表</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="header">
+				<h1 class="page-title">编辑线路</h1>
+			</div>
+			<div class="container-fluid">
+				<form class="form-horizontal">
+					<div class="form-group form-group-lg">
+    					<label for="msg-title" class="col-md-2 control-label">标题：</label>
+    					<div class="col-md-8">
+      						<input type="text" class="form-control" id="msg-title" placeholder="请输入标题内容">
+    					</div>
+  					</div>
+				</form>
+				<div class="form-horizontal">
+					<div class="form-group form-group-lg">
+						<label for="msg-body" class="col-md-2 control-label">内容：</label>
+						<div class="col-md-8">							
+							<div type="text/plain" id="myEditor">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-horizontal msg-btn">	
+					<button type="button" class="btn btn-primary col-md-1 col-md-offset-2">提交</button>
+				</div>
+			</div><!--end container -->
+			
+		</div>
+		<script type="text/javascript">
+			var um = UM.getEditor('myEditor', {
+				initialFrameWidth: null,				
+			});
+		</script>
+	</body>
+
+</html>
