@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../../css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../../css/custom.css" rel="stylesheet" />
+		<title>demo01</title>
+
+		
+		<script type="application/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+		<script type="application/javascript" src="../../js/bootstrap.min.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="navbar navbar-inverse">
+	        <div class="navbar-header">
+	        	<a class="navbar-brand" href="demo.html">后台管理模版</a>
+	        </div>
+	        <div class="nav navbar-nav navbar-right">
+	        	<li>
+                	<a href="feedback.html">
+                		<span class="glyphicon glyphicon-envelope"></span>
+                		<span class="badge">25</span>
+                	</a>
+	        	</li>
+                <li id="fat-menu" class="dropdown">                	
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-user"></i> Jack Smith
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li class="divider visible-xs"></li>
+                        <li><a tabindex="-1" href="../../signIn.html">Logout</a></li>
+                    </ul>
+                </li>                
+           	</div>
+       	</div>
+		<div class="sidebar-nav">
+			<a href="#msg-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom pull-right"></span>
+				消息管理
+			</a>
+			<ul id="msg-menu" class="nav nav-list collapse">
+				<li><a href="../../demo.html">消息列表</a></li>
+				<li><a href="../msg/spotTraffic.html">景区交通</a></li>
+				<!--<li><a href="#">景区气象</a></li>-->
+			</ul>
+			
+			<a href="#strategy-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				攻略管理
+			</a>
+			<ul id="strategy-menu" class="nav nav-list collapse">
+				<li><a href="../strategy/worshipBudda.html">礼佛列表</a></li>
+				<li><a href="../strategy/path.html">线路列表</a></li>
+				<li><a href="../strategy/share.html">分享列表</a></li>
+			</ul>
+			<a href="#live-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				直播管理
+			</a>
+			<ul id="live-menu" class="nav nav-list collapse">
+				<li><a href="../live/liveComponent.html">直播列表</a></li>
+			</ul>
+			
+			<a href="#user-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				用户管理
+			</a>
+			<ul id="user-menu" class="nav nav-list collapse in">
+				<li><a href="user.html">用户列表</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li class="active"><a href="feedback.html">意见反馈</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="header">
+				<h1 class="page-title">意见反馈列表</h1>
+			</div>
+			<div class="container-fluid">
+				<div class="btn-container">
+					<div class="form-inline">
+						<div class="form-group">							
+							<input type="text" class="form-control" placeholder="用户名 "/>
+							<button type="button" class="btn btn-primary">搜索</button>
+							<button type="button" class="btn btn-primary">删除所选条目</button>
+						</div>
+					</div>
+				</div>
+				<div class="wells">
+					<table class="table table-hover">
+						<thead>
+							<tr><th>选择</th><th>id</th><th>用户</th><th>状态</th><th>更新时间</th><th>操作</th></tr>
+						</thead>
+						<tBody>
+							<tr>
+								<td><input type="checkbox"</td>
+								<td>0</td>
+								<td>admin</td>
+								<td>未读</td>
+								<td>2018-1-11 10:23</td>
+								<td><a href="displayFeedback.html">查看 | </a><a href="#delMsg" data-toggle="modal" role="button">删除</a></td>
+							</tr>
+						</tBody>
+						<tBody>
+							<tr>
+								<td><input type="checkbox"</td>
+								<td>0</td>
+								<td>admin</td>
+								<td>未读</td>
+								<td>2018-1-11 10:23</td>
+								<td><a href="displayFeedback.html">查看 | </a><a href="#delMsg" data-toggle="modal" role="button">删除</a></td>
+							</tr>
+						</tBody>
+						<tBody>
+							<tr>
+								<td><input type="checkbox"</td>
+								<td>0</td>
+								<td>admin</td>
+								<td>未读</td>
+								<td>2018-1-11 10:23</td>
+								<td><a href="displayFeedback.html">查看 | </a><a href="#delMsg" data-toggle="modal" role="button">删除</a></td>
+							</tr>
+						</tBody>
+						<tBody>
+							<tr>
+								<td><input type="checkbox"</td>
+								<td>0</td>
+								<td>admin</td>
+								<td>未读</td>
+								<td>2018-1-11 10:23</td>
+								<td><a href="displayFeedback.html">查看 | </a><a href="#delMsg" data-toggle="modal" role="button">删除</a></td>
+							</tr>
+						</tBody>
+						<tBody>
+							<tr>
+								<td><input type="checkbox"</td>
+								<td>0</td>
+								<td>admin</td>
+								<td>已读</td>
+								<td>2018-1-11 10:23</td>
+								<td><a href="displayFeedback.html">查看 | </a><a href="#delMsg" data-toggle="modal" role="button">删除</a></td>
+							</tr>
+						</tBody>
+					</table>
+				</div>
+				<table class="table">
+					<tr>
+						<td>
+							<div class="col-md-offset-1">
+								<h3>共<strong style="color：red"> 5 </strong>页</h3>
+							</div>
+						</td>
+						<td>
+							<div class="pull-right">
+								<div class="pagination">
+									<li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">6</a></li>
+									<li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			
+				<!--
+	            	模态框
+	            -->
+	            <div class="modal small fade" tabindex="-1" role="dialog" id="delMsg">
+	            	<div class="modal-dialog" role="document">
+	            		<div class="modal-content">
+	            			<div class="modal-header">
+	            				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            					<span aria-hidden="true">&times;</span>
+	            				</button>
+	            				<h2 class="modal-title">删除所选信息</h2>
+	            			</div>
+	            			<div class="modal-body">
+	            				<span class="glyphicon glyphicon-warning-sign modal-icon"></span><p>确定要删除所选择的消息吗？</p>
+	            			</div>
+	            			<div class="modal-footer">
+	            				<button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+	            				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	            			</div>
+	            		</div>
+	            	</div>
+	            </div>
+			</div><!--end container -->
+			
+		</div>
+	</body>
+
+</html>

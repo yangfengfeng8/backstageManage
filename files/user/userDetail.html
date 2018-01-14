@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../../css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../../css/custom.css" rel="stylesheet" />
+		<title>demo01</title>
+
+		
+		<script type="application/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+		<script type="application/javascript" src="../../js/bootstrap.min.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="navbar navbar-inverse">
+	        <div class="navbar-header">
+	        	<a class="navbar-brand" href="demo.html">后台管理模版</a>
+	        </div>
+	        <div class="nav navbar-nav navbar-right">
+	        	<li>
+                	<a href="feedback.html">
+                		<span class="glyphicon glyphicon-envelope"></span>
+                		<span class="badge">25</span>
+                	</a>
+	        	</li>
+                <li id="fat-menu" class="dropdown">                	
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-user"></i> Jack Smith
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li class="divider visible-xs"></li>
+                        <li><a tabindex="-1" href="../../signIn.html">Logout</a></li>
+                    </ul>
+                </li>                
+           	</div>
+       	</div>
+		<div class="sidebar-nav">
+			<a href="#msg-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom pull-right"></span>
+				消息管理
+			</a>
+			<ul id="msg-menu" class="nav nav-list collapse">
+				<li><a href="../../demo.html">消息列表</a></li>
+				<li><a href="../msg/spotTraffic.html">景区交通</a></li>
+				<!--<li><a href="#">景区气象</a></li>-->
+			</ul>
+			
+			<a href="#strategy-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				攻略管理
+			</a>
+			<ul id="strategy-menu" class="nav nav-list collapse">
+				<li><a href="../strategy/worshipBudda.html">礼佛列表</a></li>
+				<li><a href="../strategy/path.html">线路列表</a></li>
+				<li><a href="../strategy/share.html">分享列表</a></li>
+			</ul>
+			<a href="#live-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				直播管理
+			</a>
+			<ul id="live-menu" class="nav nav-list collapse">
+				<li><a href="#">直播列表</a></li>
+			</ul>
+			
+			<a href="#user-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				用户管理
+			</a>
+			<ul id="user-menu" class="nav nav-list collapse in">
+				<li class="active"><a href="user.html">用户列表</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="feedback.html">意见反馈</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="header">
+				<h1 class="page-title">用户详情</h1>
+			</div>
+			<div class="container-fluid">
+				<div class="form-horizontal">
+					<div class="form-group">
+						<label class="control-label col-md-2 col-md-offset-1">用户名：</label>
+						<div class="col-md-6">									
+							<input type="text" class="form-control" disabled="disabled" value="admin">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2 col-md-offset-1">用户图像：</label>
+						<div class="col-md-6">									
+							<img src="../../img/user1.jpg" alt="图片出错了"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2 col-md-offset-1">手机号：</label>
+						<div class="col-md-6">									
+							<input type="text" class="form-control" disabled="disabled" value="1234567890">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2 col-md-offset-1">邮箱：</label>
+						<div class="col-md-6">									
+							<input type="text" class="form-control" disabled="disabled" value="843094036@qq.com">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2 col-md-offset-1">地址：</label>
+						<div class="col-md-6">									
+							<input type="text" class="form-control" disabled="disabled" value="843094036">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-2 col-md-offset-1">发票：</label>
+						<div class="col-md-6">									
+							<textarea rows="3" class="form-control" disabled="disabled">发票信息</textarea>
+						</div>
+					</div>
+				</div>
+			</div><!--end container -->
+			
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,225 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../../css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../../css/custom.css" rel="stylesheet" />
+		<title>demo01</title>
+
+		
+		<script type="application/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+		<script type="application/javascript" src="../../js/bootstrap.min.js"></script>	
+		
+	</head>
+
+	<body>
+		<div class="navbar navbar-inverse">
+	        <div class="navbar-header">
+	        	<a class="navbar-brand" href="demo.html">后台管理模版</a>
+	        </div>
+	        <div class="nav navbar-nav navbar-right">
+	        	<li>
+                	<a href="feedback.html">
+                		<span class="glyphicon glyphicon-envelope"></span>
+                		<span class="badge">25</span>
+                	</a>
+	        	</li>
+                <li id="fat-menu" class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-user"></i> Jack Smith
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li class="divider visible-xs"></li>
+                        <li><a tabindex="-1" href="../../signIn.html">Logout</a></li>
+                    </ul>
+                </li>                
+           	</div>
+       	</div>
+		<div class="sidebar-nav">
+			<a href="#msg-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom pull-right"></span>
+				消息管理
+			</a>
+			<ul id="msg-menu" class="nav nav-list collapse">
+				<li><a href="../../demo.html">消息列表</a></li>
+				<li><a href="../msg/spotTraffic.html">景区交通</a></li>
+				<!--<li><a href="#">景区气象</a></li>-->
+			</ul>
+			
+			<a href="#strategy-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				攻略管理
+			</a>
+			<ul id="strategy-menu" class="nav nav-list collapse">
+				<li><a href="../strategy/worshipBudda.html">礼佛列表</a></li>
+				<li><a href="../strategy/path.html">线路列表</a></li>
+				<li><a href="../strategy/share.html">分享列表</a></li>
+			</ul>
+			<a href="#live-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				直播管理
+			</a>
+			<ul id="live-menu" class="nav nav-list collapse in">
+				<li class="active"><a href="liveComponent.html">直播列表</a></li>
+			</ul>
+			
+			<a href="#user-menu" class="nav-header" data-toggle="collapse"><span class="glyphicon glyphicon-triangle-bottom"></span>
+				用户管理
+			</a>
+			<ul id="user-menu" class="nav nav-list collapse">
+				<li><a href="../user/user.html">用户列表</a></li>
+				<li><a href="../user/about.html">关于我们</a></li>
+				<li><a href="../user/feedback.html">意见反馈</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="header">
+				<h1 class="page-title">直播评论列表</h1>
+			</div>
+			<div class="container-fluid">				
+				<div class="media-container">
+					<ul class="nav nav-tabs">
+						<li role="presentation" class="active">
+							<h2 href="#component" aria-controls="component" role="tab" data-toggle="tab">累积评论
+								<span style="color: red">234</span>
+								<a role="button" class="btn btn-primary" data-toggle="modal" href="#delComponent">删除当前评论</a>
+								<a role="button" class="btn btn-primary" data-toggle="modal" href="#delComponent">删除全部评论</a>
+							</h2>
+						</li>
+					</ul>	
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="component">
+							<div class="media-list">
+								<div class="media">
+									<a class="media-left" href="#">
+										<img src="../../img/user1.jpg" class="media-object">
+									</a>
+									<div class="media-body">
+											<h3 class="media-heading">如实当初&nbsp;&nbsp;
+												<small>2018-1-13 14:44</small>
+											</h3>
+											<p>普陀上风景非常美丽</p>
+											<div class="btn-group">
+												<a href="#delLive" role="button" data-toggle="modal">删除</a>
+											</div>
+									</div>
+								</div>
+								<hr />
+								<div class="media">
+									<a class="media-left" href="#">
+										<img src="../../img/user1.jpg" class="media-object">
+									</a>
+									<div class="media-body">
+											<h3 class="media-heading">如实当初&nbsp;&nbsp;
+												<small>2018-1-13 14:44</small>
+											</h3>
+											<p>普陀上风景非常美丽</p>
+											<div class="btn-group">
+												<a href="#delLive" role="button" data-toggle="modal">删除</a>
+											</div>
+									</div>
+								</div>
+								<hr />
+								<div class="media">
+									<a class="media-left" href="#">
+										<img src="../../img/user1.jpg" class="media-object">
+									</a>
+									<div class="media-body">
+											<h3 class="media-heading">如实当初&nbsp;&nbsp;
+												<small>2018-1-13 14:44</small>
+											</h3>
+											<p>普陀上风景非常美丽</p>
+											<div class="btn-group">
+												<a href="#delLive" role="button" data-toggle="modal">删除</a>
+											</div>
+									</div>
+								</div>
+								<hr />
+								<div class="media">
+									<a class="media-left" href="#">
+										<img src="../../img/user1.jpg" class="media-object">
+									</a>
+									<div class="media-body">
+											<h3 class="media-heading">如实当初&nbsp;&nbsp;
+												<small>2018-1-13 14:44</small>
+											</h3>
+											<p>普陀上风景非常美丽</p>
+											<div class="btn-group">
+												<a href="#delLive" role="button" data-toggle="modal">删除</a>
+											</div>
+									</div>
+								</div>
+								<hr />
+								<div class="media">
+									<a class="media-left" href="#">
+										<img src="../../img/user1.jpg" class="media-object">
+									</a>
+									<div class="media-body">
+											<h3 class="media-heading">如实当初&nbsp;&nbsp;
+												<small>2018-1-13 14:44</small>
+											</h3>
+											<p>普陀上风景非常美丽</p>
+											<div class="btn-group">
+												<a href="#delLive" role="button" data-toggle="modal">删除</a>
+											</div>
+									</div>
+								</div>
+								<table class="table">
+									<tr>
+										<td>
+											<div class="col-md-offset-1">
+												<h3>共<strong style="color：red"> 5 </strong>页</h3>
+											</div>
+										</td>
+										<td>
+											<div class="pull-right">
+												<div class="pagination">
+													<li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+													<li class="active"><a href="#">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">4</a></li>
+													<li><a href="#">5</a></li>
+													<li><a href="#">6</a></li>
+													<li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div> <!--end media-containe-->
+                      
+                
+			
+				<!--
+	            	模态框
+	            -->
+	            <div class="modal small fade" tabindex="-1" role="dialog" id="delComponent">
+	            	<div class="modal-dialog" role="document">
+	            		<div class="modal-content">
+	            			<div class="modal-header">
+	            				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            					<span aria-hidden="true">&times;</span>
+	            				</button>
+	            				<h2 class="modal-title">警告</h2>
+	            			</div>
+	            			<div class="modal-body">
+	            				<span class="glyphicon glyphicon-warning-sign modal-icon"></span><p>确定要删除当前视频吗？</p>
+	            			</div>
+	            			<div class="modal-footer">
+	            				<button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+	            				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	            			</div>
+	            		</div>
+	            	</div>
+	            </div>
+			</div><!--end container-fluid-->
+			
+		</div><!-- end content-->				
+	</body>
+
+</html>
